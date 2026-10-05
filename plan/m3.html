@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es"><head><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta charset="utf-8">
+<title>M3 · Herramientas Informáticas · Ciencia de Datos UNCPBA</title>
+<meta name="description" content="Programa del módulo 3: Herramientas Informáticas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head><body>
+<div class="proto">Prototipo para revisión del CAD · Los campos marcados <span class="ph">[así]</span> están pendientes de definición</div>
+<nav class="top" aria-label="Secciones">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"><span>Ciencia de Datos<br>Cohorte 2027</span></a>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="index.html">Plan de estudios</a></li>
+      <li><a href="proyecto.html">Proyecto integrador</a></li>
+      <li><a href="../index.html#cursada">Cursada</a></li>
+      <li><a href="../index.html#aranceles">Aranceles</a></li>
+      <li><a href="../index.html#preguntas">Preguntas</a></li>
+    </ul>
+    <a class="btn pri sm" href="../index.html#interes">Dejá tus datos</a>
+  </div>
+</nav>
+<header class="phero"><div class="wrap">
+  <div class="crumb"><a href="../index.html">Inicio</a><span>›</span><a href="index.html">Plan de estudios</a><span>›</span><span>M3</span></div>
+  <div class="gcode">M3 · Fundamentos y herramientas</div>
+  <h1>Herramientas Informáticas</h1>
+  
+  <div class="chips"><span>20 horas</span><span>40 % sincrónico</span><span>Abril – Mayo</span><span>5 unidades</span></div>
+</div></header>
+<nav class="modnav" aria-label="Módulos"><div class="wrap"><a href="index.html">Plan</a><span class="sep"></span><a class="f" href="m1.html" title="Fundamentos Matemáticos I">M1</a><a class="f" href="m2.html" title="Probabilidad y Estadística">M2</a><a class="f" href="m3.html" aria-current="page" title="Herramientas Informáticas">M3</a><a class="f" href="m4.html" title="Fundamentos Matemáticos II">M4</a><a class="mt" href="m5.html" title="Aprendizaje Supervisado">M5</a><a class="mt" href="m6.html" title="Aprendizaje No Supervisado">M6</a><a class="mt" href="m7.html" title="Redes Neuronales">M7</a><a class="mt" href="m8.html" title="Series Temporales y Redes Profundas">M8</a><a class="p" href="proyecto.html">PI</a></div></nav>
+<main class="f-page">
+<section class="s tight"><div class="wrap">
+  <div class="kick">Objetivos</div>
+  <p class="obj">Que los estudiantes trabajen con las herramientas del flujo de trabajo real de un proyecto de datos: control de versiones y colaboración, entornos aislados y reproducibles, bases de datos relacionales y SQL, alternativas no relacionales, y documentación y despliegue mínimo de un proyecto.</p>
+  <div class="hbar" aria-label="Horas por unidad"><a href="#u1" style="flex:5" title="Unidad 1: Control de versiones y trabajo colaborativo (5 h)">U1<span> · 5 h</span></a><a href="#u2" style="flex:4" title="Unidad 2: Entornos reproducibles (4 h)">U2<span> · 4 h</span></a><a href="#u3" style="flex:7" title="Unidad 3: Bases de datos relacionales y SQL (7 h)">U3<span> · 7 h</span></a><a href="#u4" style="flex:2" title="Unidad 4: Almacenamiento alternativo y formatos (2 h)">U4<span> · 2 h</span></a><a href="#u5" style="flex:2" title="Unidad 5: Del análisis al producto mínimo (2 h)">U5<span> · 2 h</span></a></div>
+  <p class="hbar-note">Distribución de las 20 horas del módulo por unidad. Tocá una unidad para ir a sus contenidos.</p>
+</div></section>
+
+<section class="s tight" id="unidades"><div class="wrap">
+  <div class="kick">Contenidos</div>
+  <h2>Cinco unidades</h2>
+  <div class="units">
+<details class="unit" id="u1" open><summary><span class="u">Unidad 1</span><b>Control de versiones y trabajo colaborativo</b><span class="h">5 h</span></summary>
+<div class="ubody"><ul><li>Por qué versionar: el problema real de los archivos "final_v3_definitivo_2_pol".</li><li>Git: repositorio, área de preparación, commit, historial, deshacer cambios.</li><li>Ramas, fusión y resolución de conflictos; flujo de trabajo con ramas por tarea.</li><li>Repositorios remotos, pull requests y revisión de cambios entre pares.</li><li>Versionado de notebooks: el problema del formato, herramientas de diff y limpieza de salidas.</li><li>Qué no se versiona: datos pesados, credenciales, resultados; .gitignore y noción de versionado de datos.</li></ul><div class="practice"><small>Práctica</small>Notebook / práctica 1: cada estudiante crea el repositorio de su proyecto integrador y realiza un ciclo completo de rama, cambio, pull request y fusión con un compañero.</div><p class="dest"><small>Dónde se usa</small>Todos los módulos posteriores y de manera obligatoria en el <a href="proyecto.html">proyecto integrador</a>.</p></div></details>
+<details class="unit" id="u2"><summary><span class="u">Unidad 2</span><b>Entornos reproducibles</b><span class="h">4 h</span></summary>
+<div class="ubody"><ul><li>El problema de la reproducibilidad: versiones de bibliotecas, semillas aleatorias, dependencia del sistema.</li><li>Entornos virtuales: venv, conda; archivos de requerimientos y fijación de versiones.</li><li>Google Colab: alcance, límites, montaje de datos y persistencia; cómo convivir con un entorno local.</li><li>Contenedores: qué resuelve Docker, imagen, contenedor, Dockerfile mínimo para un proyecto de análisis.</li><li>Estructura estándar de un proyecto de datos: carpetas, separación entre datos crudos y procesados, scripts y notebooks.</li><li>Documentación mínima: README, registro de decisiones y trazabilidad del análisis.</li></ul><div class="practice"><small>Práctica</small>Práctica 2: contenerización de un análisis simple y verificación de que otro estudiante puede ejecutarlo sin intervención.</div><p class="dest"><small>Dónde se usa</small>Entrega de todos los trabajos prácticos de <a href="m5.html">M5</a> a <a href="m8.html">M8</a> y del <a href="proyecto.html">proyecto integrador</a>.</p></div></details>
+<details class="unit" id="u3"><summary><span class="u">Unidad 3</span><b>Bases de datos relacionales y SQL</b><span class="h">7 h</span></summary>
+<div class="ubody"><ul><li>Modelo relacional: tablas, claves, relaciones, normalización básica y su lectura práctica.</li><li>SQL de consulta: SELECT, filtros, orden, agregación y agrupamiento, funciones de fecha y de texto.</li><li>Combinaciones: INNER, LEFT, RIGHT, FULL; errores clásicos de duplicación de filas.</li><li>Subconsultas, CTE y funciones de ventana: ranking, acumulados, diferencias entre períodos.</li><li>Datos sucios en la base: duplicados, nulos, inconsistencias de tipo y de codificación.</li><li>Del SQL al DataFrame: SQLAlchemy, pandas.read_sql y el criterio de qué se resuelve en la base y qué en Python.</li><li>Nociones de rendimiento: índices, plan de ejecución, volumen de datos.</li></ul><div class="practice"><small>Práctica</small>Práctica 3: sobre una base relacional real con datos sucios, construcción de la tabla analítica que se usará como insumo en M5.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> y <a href="m6.html">M6</a> (construcción de la tabla analítica), <a href="m8.html">M8</a> (extracción de series), <a href="proyecto.html">proyecto integrador</a>.</p></div></details>
+<details class="unit" id="u4"><summary><span class="u">Unidad 4</span><b>Almacenamiento alternativo y formatos</b><span class="h">2 h</span></summary>
+<div class="ubody"><ul><li>Cuándo el modelo relacional no alcanza: volumen, esquema variable, velocidad de escritura.</li><li>Bases orientadas a documentos (MongoDB) y de pares clave-valor (Redis): modelo de datos y consultas básicas.</li><li>Formatos de archivo para datos: CSV, JSON, Parquet; compresión y costo de lectura.</li><li>Consumo de datos desde APIs REST: peticiones, paginación, autenticación y límites de uso.</li></ul><div class="practice"><small>Práctica</small>Práctica 4: ingesta de datos desde una API pública, almacenamiento en formato columnar y comparación de tiempos de lectura frente a CSV.</div><p class="dest"><small>Dónde se usa</small>Obtención de datos del <a href="proyecto.html">proyecto integrador</a>.</p></div></details>
+<details class="unit" id="u5"><summary><span class="u">Unidad 5</span><b>Del análisis al producto mínimo</b><span class="h">2 h</span></summary>
+<div class="ubody"><ul><li>Del notebook al script y al módulo reutilizable; funciones, parámetros y pruebas mínimas.</li><li>Compartir resultados: informe reproducible, panel simple (Streamlit o equivalente) y publicación del repositorio.</li><li>Buenas prácticas de manejo de datos sensibles: anonimización, credenciales fuera del código, licencias de los datos.</li></ul><div class="practice"><small>Práctica</small>Práctica 5: publicación del repositorio del proyecto con README, entorno declarado y un panel o informe reproducible.</div><p class="dest"><small>Dónde se usa</small>Entrega final del <a href="proyecto.html">proyecto integrador</a>.</p></div></details>
+  </div>
+</div></section>
+<section class="s tight"><div class="wrap cols3">
+  <div><h3>Evaluación</h3><p>Entrega de un repositorio propio que contenga: historial de commits significativo, entorno declarado y reproducible, un script de extracción SQL documentado y un README que permita a un tercero ejecutar el análisis. La evaluación es sobre el repositorio, no sobre un examen.</p></div>
+  <div><h3>Datos de trabajo</h3><p>Base relacional de la Diplomatura con datos sucios (versión en PostgreSQL o SQLite), una API pública de datos abiertos y el conjunto tabular transversal.</p></div>
+  <div><h3>Bibliografía</h3><ul><li>Chacon, S. y Straub, B. Pro Git, 2ª ed. (acceso libre).</li><li>Beaulieu, A. (2020). Learning SQL, 3ª ed.</li><li>Documentación oficial de Git, Docker, PostgreSQL y MongoDB.</li><li>The Turing Way — guía de investigación reproducible (acceso libre).</li></ul></div>
+</div></section>
+<section class="s tight"><div class="wrap pager"><a class="pv" href="m2.html"><small>← Anterior</small><b>M2 · Probabilidad y Estadística</b></a><a class="nx" href="m4.html"><small>Siguiente →</small><b>M4 · Fundamentos Matemáticos II</b></a></div></section>
+</main>
+<footer><div class="wrap">
+  <span class="brand"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"></span>
+  <div><b>Diplomatura Universitaria Superior en Ciencia de Datos</b>Departamento de Matemática · Facultad de Ciencias Exactas<br>Universidad Nacional del Centro de la Provincia de Buenos Aires · Tandil</div>
+  <div><b>Contacto</b><span class="ph">[correo de contacto]</span><br>Preinscripción: preingreso.exa.unicen.edu.ar<br>Folleto en PDF: <span class="ph">[enlace]</span></div>
+</div></footer>
+</body></html>

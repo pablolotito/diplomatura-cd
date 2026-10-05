@@ -124,6 +124,7 @@ details.mod .more{font-size:13px;color:var(--muted);margin-top:8px}
 details.mod[open] .more{display:none}
 details.mod ul{margin:0;padding:0 14px 14px 30px;font-size:14px;color:var(--fg-2)}
 details.mod li{margin:4px 0}
+details.mod .prog{display:block;padding:0 14px 14px;font-size:14px;font-weight:600;color:var(--met)}
 .pi{margin-top:12px;background:var(--navy);color:var(--on-navy);padding:18px 20px;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center}
 .pi .code{font-family:var(--mono);font-size:12px;color:var(--accent)}
 .pi b{font-family:var(--serif);font-weight:600;font-size:20px}
@@ -216,6 +217,7 @@ footer .brand img{height:54px}
     <ul>
       <li><a href="#plan">Plan</a></li>
       <li><a href="#modulos">Módulos</a></li>
+      <li><a href="plan/index.html">Programa</a></li>
       <li><a href="#cursada">Cursada</a></li>
       <li><a href="#docentes">Docentes</a></li>
       <li><a href="#aranceles">Aranceles</a></li>
@@ -288,20 +290,20 @@ footer .brand img{height:54px}
   <p class="intro">Cada módulo dura alrededor de dos meses y se trabaja íntegramente en notebooks de Python sobre Google Colab, con datos reales. Tocá un módulo para ver sus contenidos.</p>
   <div class="mlabel">Fundamentos y herramientas</div>
   <div class="mods">
-    <details class="mod"><summary><span class="code">M1 <i>Abril · 25 h</i></span><b>Fundamentos Matemáticos I</b><span class="more">Ver contenidos +</span></summary><ul><li>Matrices y datos, autovalores.</li><li>Descomposición en valores singulares aplicada a compresión y recomendación.</li><li>Grafos.</li><li>Nivelación en Python, NumPy y pandas.</li></ul></details>
-    <details class="mod"><summary><span class="code">M2 <i>Abr–May · 25 h</i></span><b>Probabilidad y Estadística</b><span class="more">Ver contenidos +</span></summary><ul><li>Descripción de datos y distribuciones.</li><li>Estimación e incertidumbre.</li><li>Inferencia clásica y bayesiana.</li><li>Contraste de hipótesis y regresión.</li></ul></details>
-    <details class="mod"><summary><span class="code">M3 <i>Abr–May · 20 h</i></span><b>Herramientas Informáticas</b><span class="more">Ver contenidos +</span></summary><ul><li>Git y trabajo colaborativo.</li><li>Entornos reproducibles y contenedores.</li><li>Bases relacionales y SQL sobre datos sucios.</li><li>Formatos y APIs.</li></ul></details>
-    <details class="mod"><summary><span class="code">M4 <i>May–Jun · 25 h</i></span><b>Fundamentos Matemáticos II</b><span class="more">Ver contenidos +</span></summary><ul><li>Gradientes y descenso por gradiente.</li><li>Optimización lineal, convexa y combinatoria.</li><li>Regularización.</li><li>Laplacianos de grafos y teoría de juegos aplicada.</li></ul></details>
+    <details class="mod"><summary><span class="code">M1 <i>Abril · 25 h</i></span><b>Fundamentos Matemáticos I</b><span class="more">Ver contenidos +</span></summary><ul><li>Matrices y datos, autovalores.</li><li>Descomposición en valores singulares aplicada a compresión y recomendación.</li><li>Grafos.</li><li>Nivelación en Python, NumPy y pandas.</li></ul><a class="prog" href="plan/m1.html">Programa completo →</a></details>
+    <details class="mod"><summary><span class="code">M2 <i>Abr–May · 25 h</i></span><b>Probabilidad y Estadística</b><span class="more">Ver contenidos +</span></summary><ul><li>Descripción de datos y distribuciones.</li><li>Estimación e incertidumbre.</li><li>Inferencia clásica y bayesiana.</li><li>Contraste de hipótesis y regresión.</li></ul><a class="prog" href="plan/m2.html">Programa completo →</a></details>
+    <details class="mod"><summary><span class="code">M3 <i>Abr–May · 20 h</i></span><b>Herramientas Informáticas</b><span class="more">Ver contenidos +</span></summary><ul><li>Git y trabajo colaborativo.</li><li>Entornos reproducibles y contenedores.</li><li>Bases relacionales y SQL sobre datos sucios.</li><li>Formatos y APIs.</li></ul><a class="prog" href="plan/m3.html">Programa completo →</a></details>
+    <details class="mod"><summary><span class="code">M4 <i>May–Jun · 25 h</i></span><b>Fundamentos Matemáticos II</b><span class="more">Ver contenidos +</span></summary><ul><li>Gradientes y descenso por gradiente.</li><li>Optimización lineal, convexa y combinatoria.</li><li>Regularización.</li><li>Laplacianos de grafos y teoría de juegos aplicada.</li></ul><a class="prog" href="plan/m4.html">Programa completo →</a></details>
   </div>
   <div class="mlabel">Métodos</div>
   <div class="mods">
-    <details class="mod m"><summary><span class="code">M5 <i>May–Jun · 25 h</i></span><b>Aprendizaje Supervisado</b><span class="more">Ver contenidos +</span></summary><ul><li>Del dato crudo al informe: pipelines.</li><li>Modelos regularizados, árboles y ensambles, SVM.</li><li>Métricas y clases desbalanceadas.</li><li>Validación cruzada.</li></ul></details>
-    <details class="mod m"><summary><span class="code">M6 <i>Ago–Sep · 25 h</i></span><b>Aprendizaje No Supervisado</b><span class="more">Ver contenidos +</span></summary><ul><li>Agrupamiento y su evaluación.</li><li>Reducción de dimensionalidad: PCA, t-SNE y UMAP.</li><li>Detección de anomalías.</li><li>Reglas de asociación.</li></ul></details>
-    <details class="mod m"><summary><span class="code">M7 <i>Ago–Sep · 25 h</i></span><b>Redes Neuronales</b><span class="more">Ver contenidos +</span></summary><ul><li>Del perceptrón a la red profunda.</li><li>Retropropagación y optimizadores.</li><li>Redes convolucionales y transferencia de aprendizaje.</li><li>TensorFlow y PyTorch.</li></ul></details>
-    <details class="mod m"><summary><span class="code">M8 <i>Octubre · 25 h</i></span><b>Series Temporales y Redes Profundas</b><span class="more">Ver contenidos +</span></summary><ul><li>Tendencia, estacionalidad y ruido.</li><li>Modelos ARIMA.</li><li>Validación temporal y backtesting.</li><li>Redes recurrentes LSTM y pronóstico.</li></ul></details>
+    <details class="mod m"><summary><span class="code">M5 <i>May–Jun · 25 h</i></span><b>Aprendizaje Supervisado</b><span class="more">Ver contenidos +</span></summary><ul><li>Del dato crudo al informe: pipelines.</li><li>Modelos regularizados, árboles y ensambles, SVM.</li><li>Métricas y clases desbalanceadas.</li><li>Validación cruzada.</li></ul><a class="prog" href="plan/m5.html">Programa completo →</a></details>
+    <details class="mod m"><summary><span class="code">M6 <i>Ago–Sep · 25 h</i></span><b>Aprendizaje No Supervisado</b><span class="more">Ver contenidos +</span></summary><ul><li>Agrupamiento y su evaluación.</li><li>Reducción de dimensionalidad: PCA, t-SNE y UMAP.</li><li>Detección de anomalías.</li><li>Reglas de asociación.</li></ul><a class="prog" href="plan/m6.html">Programa completo →</a></details>
+    <details class="mod m"><summary><span class="code">M7 <i>Ago–Sep · 25 h</i></span><b>Redes Neuronales</b><span class="more">Ver contenidos +</span></summary><ul><li>Del perceptrón a la red profunda.</li><li>Retropropagación y optimizadores.</li><li>Redes convolucionales y transferencia de aprendizaje.</li><li>TensorFlow y PyTorch.</li></ul><a class="prog" href="plan/m7.html">Programa completo →</a></details>
+    <details class="mod m"><summary><span class="code">M8 <i>Octubre · 25 h</i></span><b>Series Temporales y Redes Profundas</b><span class="more">Ver contenidos +</span></summary><ul><li>Tendencia, estacionalidad y ruido.</li><li>Modelos ARIMA.</li><li>Validación temporal y backtesting.</li><li>Redes recurrentes LSTM y pronóstico.</li></ul><a class="prog" href="plan/m8.html">Programa completo →</a></details>
   </div>
-  <div class="pi" id="proyecto"><span class="code">PI · Abr–Oct</span><div><b>Proyecto Integrador</b><p>Un problema real, de principio a fin, en equipos de hasta tres personas y con tutoría docente. Si tenés datos de tu trabajo o de tu investigación, ese puede ser tu proyecto. Un certificado dice que cursaste; un repositorio con tu análisis muestra que sabés hacerlo.</p></div><a href="#interes">Quiero saber más →</a></div>
-  <p class="small">Programa detallado por módulo (unidades, horas, práctica y bibliografía): página <span class="ph">[/plan]</span>.</p>
+  <div class="pi" id="proyecto"><span class="code">PI · Abr–Oct</span><div><b>Proyecto Integrador</b><p>Un problema real, de principio a fin, en equipos de hasta tres personas y con tutoría docente. Si tenés datos de tu trabajo o de tu investigación, ese puede ser tu proyecto. Un certificado dice que cursaste; un repositorio con tu análisis muestra que sabés hacerlo.</p></div><a href="plan/proyecto.html">Cómo funciona →</a></div>
+  <p class="small"><a href="plan/index.html" style="color:var(--met);font-weight:600">Ver el programa detallado por módulo →</a> Unidades, horas, práctica en notebook y bibliografía.</p>
 </div></section>
 
 <section class="s"><div class="wrap">

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es"><head><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta charset="utf-8">
+<title>M8 · Series Temporales y Redes Profundas · Ciencia de Datos UNCPBA</title>
+<meta name="description" content="Programa del módulo 8: Series Temporales y Redes Profundas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head><body>
+<div class="proto">Prototipo para revisión del CAD · Los campos marcados <span class="ph">[así]</span> están pendientes de definición</div>
+<nav class="top" aria-label="Secciones">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"><span>Ciencia de Datos<br>Cohorte 2027</span></a>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="index.html">Plan de estudios</a></li>
+      <li><a href="proyecto.html">Proyecto integrador</a></li>
+      <li><a href="../index.html#cursada">Cursada</a></li>
+      <li><a href="../index.html#aranceles">Aranceles</a></li>
+      <li><a href="../index.html#preguntas">Preguntas</a></li>
+    </ul>
+    <a class="btn pri sm" href="../index.html#interes">Dejá tus datos</a>
+  </div>
+</nav>
+<header class="phero"><div class="wrap">
+  <div class="crumb"><a href="../index.html">Inicio</a><span>›</span><a href="index.html">Plan de estudios</a><span>›</span><span>M8</span></div>
+  <div class="gcode">M8 · Métodos</div>
+  <h1>Series Temporales y Redes Profundas</h1>
+  <p class="lead">Cierre del recorrido metodológico.</p>
+  <div class="chips"><span>25 horas</span><span>40 % sincrónico</span><span>Octubre</span><span>5 unidades</span></div>
+</div></header>
+<nav class="modnav" aria-label="Módulos"><div class="wrap"><a href="index.html">Plan</a><span class="sep"></span><a class="f" href="m1.html" title="Fundamentos Matemáticos I">M1</a><a class="f" href="m2.html" title="Probabilidad y Estadística">M2</a><a class="f" href="m3.html" title="Herramientas Informáticas">M3</a><a class="f" href="m4.html" title="Fundamentos Matemáticos II">M4</a><a class="mt" href="m5.html" title="Aprendizaje Supervisado">M5</a><a class="mt" href="m6.html" title="Aprendizaje No Supervisado">M6</a><a class="mt" href="m7.html" title="Redes Neuronales">M7</a><a class="mt" href="m8.html" aria-current="page" title="Series Temporales y Redes Profundas">M8</a><a class="p" href="proyecto.html">PI</a></div></nav>
+<main class="m-page">
+<section class="s tight"><div class="wrap">
+  <div class="kick">Objetivos</div>
+  <p class="obj">Que los estudiantes modelen datos con estructura temporal identificando tendencia, estacionalidad y ruido; construyan modelos clásicos de la familia ARIMA con diagnóstico de estacionariedad; implementen redes recurrentes para predicción; y evalúen modelos temporales con esquemas de validación que respeten el orden cronológico.</p>
+  <div class="hbar" aria-label="Horas por unidad"><a href="#u1" style="flex:5" title="Unidad 1: La serie temporal como objeto de datos (5 h)">U1<span> · 5 h</span></a><a href="#u2" style="flex:6" title="Unidad 2: Modelos clásicos de pronóstico (6 h)">U2<span> · 6 h</span></a><a href="#u3" style="flex:4" title="Unidad 3: Validación y evaluación en contexto temporal (4 h)">U3<span> · 4 h</span></a><a href="#u4" style="flex:6" title="Unidad 4: Redes neuronales recurrentes (6 h)">U4<span> · 6 h</span></a><a href="#u5" style="flex:4" title="Unidad 5: Aplicaciones e integración (4 h)">U5<span> · 4 h</span></a></div>
+  <p class="hbar-note">Distribución de las 25 horas del módulo por unidad. Tocá una unidad para ir a sus contenidos.</p>
+</div></section>
+<section class="s tight"><div class="wrap">
+  <div class="kick">Qué toma de los módulos anteriores</div>
+  <h2>Lo que este módulo da por aprendido</h2>
+  <div class="needs"><div><b><a href="m2.html">De M2</a></b><p>regresión, residuos, intervalos de confianza, autocorrelación, verosimilitud.</p></div><div><b><a href="m4.html">De M4</a></b><p>descenso por gradiente y regularización, para entender el entrenamiento de la red.</p></div><div><b><a href="m5.html">De M5</a></b><p>métricas de error, sobreajuste, esquema entrenamiento/validación/prueba.</p></div><div><b><a href="m7.html">De M7</a></b><p>retropropagación, funciones de activación, uso del framework.</p></div><div><b><a href="m3.html">De M3</a></b><p>entorno reproducible y carga de datos desde base de datos.</p></div></div>
+</div></section>
+<section class="s tight" id="unidades"><div class="wrap">
+  <div class="kick">Contenidos</div>
+  <h2>Cinco unidades</h2>
+  <div class="units">
+<details class="unit" id="u1" open><summary><span class="u">Unidad 1</span><b>La serie temporal como objeto de datos</b><span class="h">5 h</span></summary>
+<div class="ubody"><ul><li>Qué cambia cuando el orden importa: dependencia, autocorrelación y por qué se rompe el supuesto de independencia usado en M2 y M5.</li><li>Ingesta y regularización de series: índices temporales, frecuencias, remuestreo, huecos y valores faltantes, calendarios y efectos de día hábil.</li><li>Descomposición en tendencia, estacionalidad y residuo: descomposición clásica aditiva y multiplicativa, STL.</li><li>Transformaciones estabilizadoras: logaritmo, diferenciación regular y estacional, Box-Cox.</li><li>Exploración: gráficos de línea, de rezagos, ACF y PACF; estacionalidad múltiple.</li></ul><div class="practice"><small>Práctica</small>Notebook 1: de un CSV crudo con marcas de tiempo irregulares a una serie regular, descompuesta y graficada. Se entrega la función de carga que se reutilizará en toda la cursada del módulo.</div></div></details>
+<details class="unit" id="u2"><summary><span class="u">Unidad 2</span><b>Modelos clásicos de pronóstico</b><span class="h">6 h</span></summary>
+<div class="ubody"><ul><li>Líneas de base que hay que superar: naive, naive estacional, media móvil, drift. Por qué se reportan siempre.</li><li>Suavizado exponencial: simple, Holt y Holt-Winters; elección entre esquema aditivo y multiplicativo.</li><li>Estacionariedad y pruebas: ADF, KPSS; interpretación conjunta y errores frecuentes.</li><li>AR, MA, ARMA, ARIMA y SARIMA: lectura de ACF/PACF, criterios AIC/BIC, selección automática y sus límites.</li><li>Diagnóstico de residuos: ruido blanco, Ljung-Box, normalidad, heterocedasticidad.</li><li>Variables exógenas: ARIMAX/SARIMAX y feriados, promociones o clima como regresores.</li></ul><div class="practice"><small>Práctica</small>Notebook 2: pipeline completo sobre una serie real de demanda — línea de base, SARIMA con selección de orden, diagnóstico de residuos e intervalos de predicción.</div></div></details>
+<details class="unit" id="u3"><summary><span class="u">Unidad 3</span><b>Validación y evaluación en contexto temporal</b><span class="h">4 h</span></summary>
+<div class="ubody"><ul><li>Por qué la validación cruzada aleatoria de M5 no es válida: fuga de información del futuro hacia el pasado.</li><li>Partición temporal, ventana expansiva y ventana deslizante; backtesting y origen de pronóstico móvil.</li><li>Métricas: MAE, RMSE, MAPE y sus fallas, sMAPE, MASE; escala y comparabilidad entre series.</li><li>Horizonte de pronóstico: predicción a un paso versus a varios pasos, propagación del error, estrategias recursiva y directa.</li><li>Intervalos de predicción y comunicación de la incertidumbre.</li></ul><div class="practice"><small>Práctica</small>Notebook 3: implementación de un backtesting walk-forward reutilizable y comparación tabulada de todos los modelos del módulo sobre el mismo esquema.</div></div></details>
+<details class="unit" id="u4"><summary><span class="u">Unidad 4</span><b>Redes neuronales recurrentes</b><span class="h">6 h</span></summary>
+<div class="ubody"><ul><li>De la ventana deslizante al tensor de entrada: supervisión a partir de una serie, escalado y desescalado correctos.</li><li>RNN simple: recurrencia, desenrollado en el tiempo, retropropagación a través del tiempo y el problema del gradiente que se desvanece.</li><li>LSTM y GRU: compuertas, memoria de largo plazo, cuándo cada una.</li><li>Arquitecturas prácticas: apilamiento, bidireccionalidad y su restricción en pronóstico, dropout recurrente, early stopping.</li><li>Series multivariadas y covariables; alternativas de referencia: CNN 1D dilatada y una noción del enfoque de atención.</li><li>Cuándo la red no conviene: pocos datos, series cortas, señal fuertemente estacional.</li></ul><div class="practice"><small>Práctica</small>Notebook 4: LSTM en Keras/PyTorch sobre la misma serie de la Unidad 2, evaluada con el mismo backtesting, y comparación honesta contra SARIMA y contra la línea de base.</div></div></details>
+<details class="unit" id="u5"><summary><span class="u">Unidad 5</span><b>Aplicaciones e integración</b><span class="h">4 h</span></summary>
+<div class="ubody"><ul><li>Casos: demanda y consumo energético, series epidemiológicas, series ambientales y meteorológicas, series económicas.</li><li>Detección de anomalías sobre series temporales, retomando los criterios de M6.</li><li>Puesta en producción mínima: reentrenamiento periódico, deriva de datos y monitoreo del error.</li><li>Cierre de la Diplomatura: cómo se integran M5 a M8 en el proyecto integrador; checklist de un análisis defendible.</li></ul><div class="practice"><small>Práctica</small>Notebook 5: caso integrador breve, con informe de resultados en el mismo notebook.</div></div></details>
+  </div>
+</div></section>
+<section class="s tight"><div class="wrap cols3">
+  <div><h3>Evaluación</h3><p>Trabajo práctico integrador: pronóstico sobre una serie asignada, con línea de base, un modelo clásico y un modelo recurrente, evaluados bajo un mismo esquema de validación temporal, y un informe con la justificación del modelo elegido. Se evalúa la corrección del esquema de validación y la lectura crítica de las métricas, no la performance absoluta.</p></div>
+  <div><h3>Datos de trabajo</h3><p>Serie de demanda eléctrica horaria (dataset transversal), serie de casos epidemiológicos semanales, serie de precios o índices mensuales.</p></div>
+  <div><h3>Bibliografía</h3><ul><li>Hyndman, R. J. y Athanasopoulos, G. (2021). Forecasting: Principles and Practice, 3ª ed.</li><li>Géron, A. (2022). Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow, 3ª ed., cap. 15.</li><li>Brownlee, J. Deep Learning for Time Series Forecasting (material de referencia práctica).</li><li>Documentación de statsmodels, pmdarima y Keras/PyTorch.</li></ul></div>
+</div></section>
+<section class="s tight"><div class="wrap pager"><a class="pv" href="m7.html"><small>← Anterior</small><b>M7 · Redes Neuronales</b></a><a class="nx" href="proyecto.html"><small>Siguiente →</small><b>Proyecto Integrador</b></a></div></section>
+</main>
+<footer><div class="wrap">
+  <span class="brand"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"></span>
+  <div><b>Diplomatura Universitaria Superior en Ciencia de Datos</b>Departamento de Matemática · Facultad de Ciencias Exactas<br>Universidad Nacional del Centro de la Provincia de Buenos Aires · Tandil</div>
+  <div><b>Contacto</b><span class="ph">[correo de contacto]</span><br>Preinscripción: preingreso.exa.unicen.edu.ar<br>Folleto en PDF: <span class="ph">[enlace]</span></div>
+</div></footer>
+</body></html>

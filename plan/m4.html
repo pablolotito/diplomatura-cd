@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es"><head><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta charset="utf-8">
+<title>M4 · Fundamentos Matemáticos II · Ciencia de Datos UNCPBA</title>
+<meta name="description" content="Programa del módulo 4: Fundamentos Matemáticos II.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head><body>
+<div class="proto">Prototipo para revisión del CAD · Los campos marcados <span class="ph">[así]</span> están pendientes de definición</div>
+<nav class="top" aria-label="Secciones">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"><span>Ciencia de Datos<br>Cohorte 2027</span></a>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="index.html">Plan de estudios</a></li>
+      <li><a href="proyecto.html">Proyecto integrador</a></li>
+      <li><a href="../index.html#cursada">Cursada</a></li>
+      <li><a href="../index.html#aranceles">Aranceles</a></li>
+      <li><a href="../index.html#preguntas">Preguntas</a></li>
+    </ul>
+    <a class="btn pri sm" href="../index.html#interes">Dejá tus datos</a>
+  </div>
+</nav>
+<header class="phero"><div class="wrap">
+  <div class="crumb"><a href="../index.html">Inicio</a><span>›</span><a href="index.html">Plan de estudios</a><span>›</span><span>M4</span></div>
+  <div class="gcode">M4 · Fundamentos y herramientas</div>
+  <h1>Fundamentos Matemáticos II</h1>
+  
+  <div class="chips"><span>25 horas</span><span>40 % sincrónico</span><span>Mayo – Junio</span><span>5 unidades</span></div>
+</div></header>
+<nav class="modnav" aria-label="Módulos"><div class="wrap"><a href="index.html">Plan</a><span class="sep"></span><a class="f" href="m1.html" title="Fundamentos Matemáticos I">M1</a><a class="f" href="m2.html" title="Probabilidad y Estadística">M2</a><a class="f" href="m3.html" title="Herramientas Informáticas">M3</a><a class="f" href="m4.html" aria-current="page" title="Fundamentos Matemáticos II">M4</a><a class="mt" href="m5.html" title="Aprendizaje Supervisado">M5</a><a class="mt" href="m6.html" title="Aprendizaje No Supervisado">M6</a><a class="mt" href="m7.html" title="Redes Neuronales">M7</a><a class="mt" href="m8.html" title="Series Temporales y Redes Profundas">M8</a><a class="p" href="proyecto.html">PI</a></div></nav>
+<main class="f-page">
+<section class="s tight"><div class="wrap">
+  <div class="kick">Objetivos</div>
+  <p class="obj">Que los estudiantes manejen las herramientas de cálculo y de optimización que sostienen el entrenamiento de los modelos: gradientes y derivadas parciales, optimización lineal, convexa y combinatoria, el Laplaciano de grafos y la teoría espectral, y una noción aplicada de teoría de juegos para decisiones en entornos interactivos.</p>
+  <div class="hbar" aria-label="Horas por unidad"><a href="#u1" style="flex:5" title="Unidad 1: Cálculo diferencial para modelos (5 h)">U1<span> · 5 h</span></a><a href="#u2" style="flex:6" title="Unidad 2: Optimización sin restricciones y descenso por gradiente (6 h)">U2<span> · 6 h</span></a><a href="#u3" style="flex:6" title="Unidad 3: Optimización con restricciones, lineal y regularización (6 h)">U3<span> · 6 h</span></a><a href="#u4" style="flex:5" title="Unidad 4: Grafos, Laplacianos y difusión (5 h)">U4<span> · 5 h</span></a><a href="#u5" style="flex:3" title="Unidad 5: Teoría de juegos aplicada a la decisión con datos (3 h)">U5<span> · 3 h</span></a></div>
+  <p class="hbar-note">Distribución de las 25 horas del módulo por unidad. Tocá una unidad para ir a sus contenidos.</p>
+</div></section>
+
+<section class="s tight" id="unidades"><div class="wrap">
+  <div class="kick">Contenidos</div>
+  <h2>Cinco unidades</h2>
+  <div class="units">
+<details class="unit" id="u1" open><summary><span class="u">Unidad 1</span><b>Cálculo diferencial para modelos</b><span class="h">5 h</span></summary>
+<div class="ubody"><ul><li>Derivada y derivadas parciales; gradiente como dirección de máximo crecimiento.</li><li>Regla de la cadena y su forma multivariada: es literalmente la retropropagación de M7.</li><li>Matriz jacobiana y hessiana; curvatura, puntos críticos, mínimos, máximos y puntos silla.</li><li>Diferenciación numérica, simbólica y automática; verificación numérica del gradiente.</li><li>Series de Taylor y aproximación local de una función de pérdida.</li></ul><div class="practice"><small>Práctica</small>Notebook 1: cálculo simbólico con SymPy y diferenciación automática con autograd/JAX o PyTorch sobre funciones de pérdida concretas de M5.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> (optimización de la pérdida en modelos regularizados), <a href="m7.html">M7</a> (retropropagación), <a href="m8.html">M8</a> (entrenamiento de redes recurrentes).</p></div></details>
+<details class="unit" id="u2"><summary><span class="u">Unidad 2</span><b>Optimización sin restricciones y descenso por gradiente</b><span class="h">6 h</span></summary>
+<div class="ubody"><ul><li>El problema de minimización; existencia y unicidad; función objetivo de un modelo estadístico.</li><li>Convexidad de conjuntos y funciones; por qué la convexidad garantiza el óptimo global y qué se pierde sin ella.</li><li>Descenso por gradiente: tasa de aprendizaje, convergencia, mal condicionamiento y sus efectos.</li><li>Variantes: descenso estocástico y por lotes, momento, Adam; su lectura como métodos de optimización.</li><li>Métodos de segundo orden: Newton y cuasi-Newton (BFGS, L-BFGS); cuándo se usan en la práctica de la Ciencia de Datos.</li><li>Mínimos cuadrados como problema de optimización; solución cerrada frente a solución iterativa.</li></ul><div class="practice"><small>Práctica</small>Notebook 2: implementación desde cero del descenso por gradiente y de sus variantes sobre una regresión, con visualización de las trayectorias sobre las curvas de nivel.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> (ajuste de todos los modelos lineales), <a href="m7.html">M7</a> y <a href="m8.html">M8</a> (entrenamiento), <a href="m6.html">M6</a> (funciones objetivo del agrupamiento).</p></div></details>
+<details class="unit" id="u3"><summary><span class="u">Unidad 3</span><b>Optimización con restricciones, lineal y regularización</b><span class="h">6 h</span></summary>
+<div class="ubody"><ul><li>Problemas con restricciones; multiplicadores de Lagrange y lectura intuitiva de las condiciones KKT.</li><li>Dualidad: enunciado y su rol en la formulación de las máquinas de vectores soporte de M5.</li><li>Programación lineal: formulación, geometría del poliedro, método símplex como caja negra, análisis de sensibilidad.</li><li>Regularización L1 y L2 como restricción sobre la norma: por qué Lasso produce coeficientes nulos y Ridge no.</li><li>Optimización combinatoria: complejidad, problemas de asignación y de recorrido, heurísticas y metaheurísticas.</li><li>Herramientas: SciPy.optimize, CVXPY y un solver de programación lineal.</li></ul><div class="practice"><small>Práctica</small>Notebook 3: un problema de asignación o de ruteo resuelto con programación lineal y comparación geométrica de Ridge frente a Lasso sobre el mismo conjunto de datos.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> (regularización, SVM), <a href="m6.html">M6</a> (selección de variables), <a href="proyecto.html">proyecto integrador</a> (problemas de decisión).</p></div></details>
+<details class="unit" id="u4"><summary><span class="u">Unidad 4</span><b>Grafos, Laplacianos y difusión</b><span class="h">5 h</span></summary>
+<div class="ubody"><ul><li>Del grafo a la matriz: adyacencia, grado, incidencia (retoma M1) y Laplaciano combinatorio y normalizado.</li><li>Espectro del Laplaciano: el autovalor nulo, la conectividad, el segundo autovalor y el corte del grafo.</li><li>Clustering espectral: derivación intuitiva del algoritmo que se aplica en M6.</li><li>Ecuación de difusión sobre grafos; caminatas aleatorias, PageRank y propagación de etiquetas.</li><li>Medidas de centralidad y análisis de redes con NetworkX.</li></ul><div class="practice"><small>Práctica</small>Notebook 4: análisis espectral de una red real (colaboración, transporte o redes sociales) y particionamiento del grafo con el Laplaciano.</div><p class="dest"><small>Dónde se usa</small><a href="m6.html">M6</a> (clustering espectral, matrices de similitud), <a href="m7.html">M7</a> (panorama de redes sobre grafos), <a href="proyecto.html">proyecto integrador</a> (datos relacionales).</p></div></details>
+<details class="unit" id="u5"><summary><span class="u">Unidad 5</span><b>Teoría de juegos aplicada a la decisión con datos</b><span class="h">3 h</span></summary>
+<div class="ubody"><ul><li>Juegos en forma normal, estrategias, equilibrio de Nash; equilibrio en estrategias mixtas.</li><li>Juegos de suma cero y su formulación como programa lineal (enlaza con la Unidad 3).</li><li>Aprendizaje en juegos repetidos; bandidos multibrazo y el compromiso exploración-explotación.</li><li>Aplicaciones: fijación de precios, asignación de recursos, competencia entre agentes y una noción de aprendizaje adversario.</li></ul><div class="practice"><small>Práctica</small>Notebook 5: resolución de un juego de suma cero por programación lineal y simulación de un algoritmo de bandidos sobre un problema de asignación.</div><p class="dest"><small>Dónde se usa</small><a href="proyecto.html">Proyecto integrador</a>; base conceptual del entrenamiento adversario mencionado en <a href="m7.html">M7</a>.</p></div></details>
+  </div>
+</div></section>
+<section class="s tight"><div class="wrap cols3">
+  <div><h3>Evaluación</h3><p>Trabajo práctico con dos partes: (i) implementación y comparación de métodos de optimización sobre una función de pérdida real, con análisis del efecto de los hiperparámetros; (ii) análisis espectral de un grafo con interpretación de los grupos obtenidos. Se evalúa la capacidad de conectar cada herramienta con su uso posterior, no la demostración de resultados teóricos.</p></div>
+  <div><h3>Datos de trabajo</h3><p>Conjunto tabular transversal (para las funciones de pérdida), una red real de mediano tamaño y un problema de asignación con datos operativos.</p></div>
+  <div><h3>Bibliografía</h3><ul><li>Boyd, S. y Vandenberghe, L. (2004). Convex Optimization (caps. 1 a 5, uso selectivo).</li><li>Deisenroth, M. P., Faisal, A. A. y Ong, C. S. (2020). Mathematics for Machine Learning, caps. 5 y 7.</li><li>Nocedal, J. y Wright, S. (2006). Numerical Optimization (referencia).</li><li>Documentación de SciPy.optimize, CVXPY y NetworkX.</li></ul></div>
+</div></section>
+<section class="s tight"><div class="wrap pager"><a class="pv" href="m3.html"><small>← Anterior</small><b>M3 · Herramientas Informáticas</b></a><a class="nx" href="m5.html"><small>Siguiente →</small><b>M5 · Aprendizaje Supervisado</b></a></div></section>
+</main>
+<footer><div class="wrap">
+  <span class="brand"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"></span>
+  <div><b>Diplomatura Universitaria Superior en Ciencia de Datos</b>Departamento de Matemática · Facultad de Ciencias Exactas<br>Universidad Nacional del Centro de la Provincia de Buenos Aires · Tandil</div>
+  <div><b>Contacto</b><span class="ph">[correo de contacto]</span><br>Preinscripción: preingreso.exa.unicen.edu.ar<br>Folleto en PDF: <span class="ph">[enlace]</span></div>
+</div></footer>
+</body></html>

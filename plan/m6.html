@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es"><head><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta charset="utf-8">
+<title>M6 · Aprendizaje No Supervisado · Ciencia de Datos UNCPBA</title>
+<meta name="description" content="Programa del módulo 6: Aprendizaje No Supervisado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head><body>
+<div class="proto">Prototipo para revisión del CAD · Los campos marcados <span class="ph">[así]</span> están pendientes de definición</div>
+<nav class="top" aria-label="Secciones">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"><span>Ciencia de Datos<br>Cohorte 2027</span></a>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="index.html">Plan de estudios</a></li>
+      <li><a href="proyecto.html">Proyecto integrador</a></li>
+      <li><a href="../index.html#cursada">Cursada</a></li>
+      <li><a href="../index.html#aranceles">Aranceles</a></li>
+      <li><a href="../index.html#preguntas">Preguntas</a></li>
+    </ul>
+    <a class="btn pri sm" href="../index.html#interes">Dejá tus datos</a>
+  </div>
+</nav>
+<header class="phero"><div class="wrap">
+  <div class="crumb"><a href="../index.html">Inicio</a><span>›</span><a href="index.html">Plan de estudios</a><span>›</span><span>M6</span></div>
+  <div class="gcode">M6 · Métodos</div>
+  <h1>Aprendizaje No Supervisado</h1>
+  
+  <div class="chips"><span>25 horas</span><span>40 % sincrónico</span><span>Agosto – Septiembre</span><span>5 unidades</span></div>
+</div></header>
+<nav class="modnav" aria-label="Módulos"><div class="wrap"><a href="index.html">Plan</a><span class="sep"></span><a class="f" href="m1.html" title="Fundamentos Matemáticos I">M1</a><a class="f" href="m2.html" title="Probabilidad y Estadística">M2</a><a class="f" href="m3.html" title="Herramientas Informáticas">M3</a><a class="f" href="m4.html" title="Fundamentos Matemáticos II">M4</a><a class="mt" href="m5.html" title="Aprendizaje Supervisado">M5</a><a class="mt" href="m6.html" aria-current="page" title="Aprendizaje No Supervisado">M6</a><a class="mt" href="m7.html" title="Redes Neuronales">M7</a><a class="mt" href="m8.html" title="Series Temporales y Redes Profundas">M8</a><a class="p" href="proyecto.html">PI</a></div></nav>
+<main class="m-page">
+<section class="s tight"><div class="wrap">
+  <div class="kick">Objetivos</div>
+  <p class="obj">Que los estudiantes descubran estructura en datos sin etiquetas: agrupen observaciones con criterios explícitos y evalúen la calidad del agrupamiento; reduzcan la dimensionalidad para visualizar y para modelar; detecten anomalías; y analicen asociaciones y estructuras latentes.</p>
+  <div class="hbar" aria-label="Horas por unidad"><a href="#u1" style="flex:4" title="Unidad 1: Problemas sin etiqueta y geometría de los datos (4 h)">U1<span> · 4 h</span></a><a href="#u2" style="flex:7" title="Unidad 2: Agrupamiento (7 h)">U2<span> · 7 h</span></a><a href="#u3" style="flex:3" title="Unidad 3: Evaluación de agrupamientos (3 h)">U3<span> · 3 h</span></a><a href="#u4" style="flex:6" title="Unidad 4: Reducción de dimensionalidad (6 h)">U4<span> · 6 h</span></a><a href="#u5" style="flex:5" title="Unidad 5: Anomalías y estructuras latentes (5 h)">U5<span> · 5 h</span></a></div>
+  <p class="hbar-note">Distribución de las 25 horas del módulo por unidad. Tocá una unidad para ir a sus contenidos.</p>
+</div></section>
+<section class="s tight"><div class="wrap">
+  <div class="kick">Qué toma de los módulos anteriores</div>
+  <h2>Lo que este módulo da por aprendido</h2>
+  <div class="needs"><div><b><a href="m1.html">De M1</a></b><p>autovalores y autovectores, SVD, normas, matrices de similitud y de incidencia de grafos.</p></div><div><b><a href="m2.html">De M2</a></b><p>distribuciones multivariadas, covarianza, verosimilitud y EM, análisis descriptivo multivariado.</p></div><div><b><a href="m4.html">De M4</a></b><p>Laplaciano de grafos y teoría espectral, nociones de optimización para las funciones objetivo del agrupamiento.</p></div><div><b><a href="m3.html">De M3</a></b><p>manejo de conjuntos grandes, consultas SQL para armar la tabla analítica.</p></div></div>
+</div></section>
+<section class="s tight" id="unidades"><div class="wrap">
+  <div class="kick">Contenidos</div>
+  <h2>Cinco unidades</h2>
+  <div class="units">
+<details class="unit" id="u1" open><summary><span class="u">Unidad 1</span><b>Problemas sin etiqueta y geometría de los datos</b><span class="h">4 h</span></summary>
+<div class="ubody"><ul><li>Qué cambia sin variable objetivo: no hay error de predicción, la validación es otro problema.</li><li>Medidas de similitud y distancia: euclídea, Manhattan, coseno, Mahalanobis, distancias para variables mixtas.</li><li>Escalado y su efecto determinante sobre cualquier método basado en distancias.</li><li>La maldición de la dimensionalidad: concentración de distancias y sus consecuencias prácticas.</li><li>Análisis exploratorio previo obligatorio: distribuciones, correlaciones, valores faltantes.</li></ul><div class="practice"><small>Práctica</small>Notebook 1: efecto del escalado y de la métrica sobre un mismo conjunto; visualización de la concentración de distancias al crecer la dimensión.</div></div></details>
+<details class="unit" id="u2"><summary><span class="u">Unidad 2</span><b>Agrupamiento</b><span class="h">7 h</span></summary>
+<div class="ubody"><ul><li>K-Means: función objetivo, algoritmo de Lloyd, inicialización k-means++, sensibilidad a la escala y a la forma de los grupos.</li><li>Elección de k: codo, silueta, criterio de Calinski-Harabasz, estadístico de brecha; por qué no hay respuesta única.</li><li>Agrupamiento jerárquico: enlaces, dendrograma, corte del árbol.</li><li>DBSCAN y HDBSCAN: densidad, parámetros eps y min_samples, grupos de forma arbitraria y puntos de ruido.</li><li>Modelos de mezcla gaussiana y agrupamiento probabilístico; algoritmo EM y asignación blanda (retoma verosimilitud de M2).</li><li>Clustering espectral: del grafo de similitud al Laplaciano y a sus autovectores (usa directamente M1 y M4).</li><li>Interpretación y perfilado de los grupos obtenidos: cómo describir un cluster para un destinatario no técnico.</li></ul><div class="practice"><small>Práctica</small>Notebook 2: comparación sistemática de cinco algoritmos sobre datos sintéticos con estructuras distintas y sobre un conjunto real de segmentación.</div></div></details>
+<details class="unit" id="u3"><summary><span class="u">Unidad 3</span><b>Evaluación de agrupamientos</b><span class="h">3 h</span></summary>
+<div class="ubody"><ul><li>Índices internos: silueta, Davies-Bouldin, Calinski-Harabasz; qué mide cada uno y sus sesgos.</li><li>Índices externos cuando existe una etiqueta parcial: Rand ajustado, información mutua normalizada.</li><li>Estabilidad del agrupamiento frente a remuestreo y a semillas; validación por bootstrap.</li><li>Errores frecuentes: forzar k, interpretar ruido como grupo, comparar índices entre métricas distintas.</li></ul><div class="practice"><small>Práctica</small>Notebook 3: función reutilizable de evaluación y análisis de estabilidad de las soluciones de la Unidad 2.</div></div></details>
+<details class="unit" id="u4"><summary><span class="u">Unidad 4</span><b>Reducción de dimensionalidad</b><span class="h">6 h</span></summary>
+<div class="ubody"><ul><li>PCA: varianza explicada, componentes, biplot, elección del número de componentes; su equivalencia con la SVD vista en M1.</li><li>PCA para preprocesar antes de modelar en M5 y M7; cuándo mejora y cuándo destruye señal.</li><li>Métodos no lineales: t-SNE y UMAP; parámetros críticos, lectura correcta del gráfico resultante y sus abusos habituales.</li><li>Factorización de matrices no negativas y su lectura como temas o partes.</li><li>Autocodificadores como reducción no lineal: se enuncia aquí y se implementa en M7.</li><li>Selección de variables frente a extracción de variables: criterios de decisión.</li></ul><div class="practice"><small>Práctica</small>Notebook 4: PCA + t-SNE/UMAP sobre un conjunto de alta dimensión, con lectura crítica de qué conclusiones se pueden y no se pueden extraer del mapa.</div></div></details>
+<details class="unit" id="u5"><summary><span class="u">Unidad 5</span><b>Anomalías y estructuras latentes</b><span class="h">5 h</span></summary>
+<div class="ubody"><ul><li>Detección de anomalías: enfoque estadístico, distancia al vecindario (LOF), Isolation Forest, One-Class SVM, error de reconstrucción.</li><li>Anomalía contextual y colectiva; el problema del desbalance extremo y de la evaluación sin etiquetas.</li><li>Reglas de asociación: soporte, confianza, lift, algoritmo Apriori y FP-Growth; análisis de canasta de compra.</li><li>Estructuras latentes en texto: representación vectorial, LSA/LDA como panorama.</li><li>Integración: el análisis no supervisado como etapa exploratoria previa al modelado supervisado del proyecto integrador.</li></ul><div class="practice"><small>Práctica</small>Notebook 5: detección de anomalías sobre transacciones o registros de sensores, y reglas de asociación sobre un conjunto de transacciones comerciales.</div></div></details>
+  </div>
+</div></section>
+<section class="s tight"><div class="wrap cols3">
+  <div><h3>Evaluación</h3><p>Trabajo práctico: análisis no supervisado completo de un conjunto real asignado — exploración, reducción de dimensionalidad, agrupamiento con al menos dos algoritmos, evaluación y estabilidad, perfilado interpretativo de los grupos y detección de anomalías. Se evalúa la justificación de cada decisión y la honestidad de las conclusiones.</p></div>
+  <div><h3>Datos de trabajo</h3><p>Conjunto de segmentación de clientes o de usuarios, conjunto de expresión génica o espectros de alta dimensión, registro de transacciones para reglas de asociación.</p></div>
+  <div><h3>Bibliografía</h3><ul><li>Hastie, T., Tibshirani, R. y Friedman, J. (2009). The Elements of Statistical Learning, cap. 14.</li><li>Aggarwal, C. C. (2015). Data Mining: The Textbook, caps. 6, 8 y 9.</li><li>VanderPlas, J. (2016). Python Data Science Handbook, cap. 5.</li><li>Géron, A. (2022). Hands-On Machine Learning..., cap. 9.</li><li>Documentación de scikit-learn y de UMAP-learn.</li></ul></div>
+</div></section>
+<section class="s tight"><div class="wrap pager"><a class="pv" href="m5.html"><small>← Anterior</small><b>M5 · Aprendizaje Supervisado</b></a><a class="nx" href="m7.html"><small>Siguiente →</small><b>M7 · Redes Neuronales</b></a></div></section>
+</main>
+<footer><div class="wrap">
+  <span class="brand"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"></span>
+  <div><b>Diplomatura Universitaria Superior en Ciencia de Datos</b>Departamento de Matemática · Facultad de Ciencias Exactas<br>Universidad Nacional del Centro de la Provincia de Buenos Aires · Tandil</div>
+  <div><b>Contacto</b><span class="ph">[correo de contacto]</span><br>Preinscripción: preingreso.exa.unicen.edu.ar<br>Folleto en PDF: <span class="ph">[enlace]</span></div>
+</div></footer>
+</body></html>

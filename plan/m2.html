@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es"><head><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta charset="utf-8">
+<title>M2 · Probabilidad y Estadística · Ciencia de Datos UNCPBA</title>
+<meta name="description" content="Programa del módulo 2: Probabilidad y Estadística.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head><body>
+<div class="proto">Prototipo para revisión del CAD · Los campos marcados <span class="ph">[así]</span> están pendientes de definición</div>
+<nav class="top" aria-label="Secciones">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"><span>Ciencia de Datos<br>Cohorte 2027</span></a>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="index.html">Plan de estudios</a></li>
+      <li><a href="proyecto.html">Proyecto integrador</a></li>
+      <li><a href="../index.html#cursada">Cursada</a></li>
+      <li><a href="../index.html#aranceles">Aranceles</a></li>
+      <li><a href="../index.html#preguntas">Preguntas</a></li>
+    </ul>
+    <a class="btn pri sm" href="../index.html#interes">Dejá tus datos</a>
+  </div>
+</nav>
+<header class="phero"><div class="wrap">
+  <div class="crumb"><a href="../index.html">Inicio</a><span>›</span><a href="index.html">Plan de estudios</a><span>›</span><span>M2</span></div>
+  <div class="gcode">M2 · Fundamentos y herramientas</div>
+  <h1>Probabilidad y Estadística</h1>
+  
+  <div class="chips"><span>25 horas</span><span>40 % sincrónico</span><span>Abril – Mayo</span><span>5 unidades</span></div>
+</div></header>
+<nav class="modnav" aria-label="Módulos"><div class="wrap"><a href="index.html">Plan</a><span class="sep"></span><a class="f" href="m1.html" title="Fundamentos Matemáticos I">M1</a><a class="f" href="m2.html" aria-current="page" title="Probabilidad y Estadística">M2</a><a class="f" href="m3.html" title="Herramientas Informáticas">M3</a><a class="f" href="m4.html" title="Fundamentos Matemáticos II">M4</a><a class="mt" href="m5.html" title="Aprendizaje Supervisado">M5</a><a class="mt" href="m6.html" title="Aprendizaje No Supervisado">M6</a><a class="mt" href="m7.html" title="Redes Neuronales">M7</a><a class="mt" href="m8.html" title="Series Temporales y Redes Profundas">M8</a><a class="p" href="proyecto.html">PI</a></div></nav>
+<main class="f-page">
+<section class="s tight"><div class="wrap">
+  <div class="kick">Objetivos</div>
+  <p class="obj">Que los estudiantes razonen cuantitativamente sobre la incertidumbre: describan y modelen datos multivariados, estimen parámetros por métodos clásicos y bayesianos, cuantifiquen la incertidumbre de una estimación, contrasten hipótesis con criterio y usen la regresión como modelo, todo con datos reales y simulación.</p>
+  <div class="hbar" aria-label="Horas por unidad"><a href="#u1" style="flex:4" title="Unidad 1: Datos, descripción y visualización (4 h)">U1<span> · 4 h</span></a><a href="#u2" style="flex:5" title="Unidad 2: Probabilidad y modelos aleatorios (5 h)">U2<span> · 5 h</span></a><a href="#u3" style="flex:5" title="Unidad 3: Estimación e incertidumbre (5 h)">U3<span> · 5 h</span></a><a href="#u4" style="flex:4" title="Unidad 4: Contraste de hipótesis con criterio (4 h)">U4<span> · 4 h</span></a><a href="#u5" style="flex:7" title="Unidad 5: Regresión y modelos estadísticos (7 h)">U5<span> · 7 h</span></a></div>
+  <p class="hbar-note">Distribución de las 25 horas del módulo por unidad. Tocá una unidad para ir a sus contenidos.</p>
+</div></section>
+
+<section class="s tight" id="unidades"><div class="wrap">
+  <div class="kick">Contenidos</div>
+  <h2>Cinco unidades</h2>
+  <div class="units">
+<details class="unit" id="u1" open><summary><span class="u">Unidad 1</span><b>Datos, descripción y visualización</b><span class="h">4 h</span></summary>
+<div class="ubody"><ul><li>Tipos de variables y estructura de una tabla analítica; unidad de observación.</li><li>Medidas de posición, dispersión y forma; robustez frente a atípicos.</li><li>Visualización estadística: histograma, densidad, boxplot, gráfico de dispersión, matriz de dispersión; qué muestra y qué oculta cada uno.</li><li>Análisis descriptivo multivariado: covarianza, correlación de Pearson y de Spearman, correlación no implica causalidad.</li><li>Valores faltantes: mecanismos, diagnóstico y estrategias de imputación.</li><li>Sesgos de la muestra: sesgo de selección, de supervivencia y de medición.</li></ul><div class="practice"><small>Práctica</small>Notebook 1: análisis exploratorio completo del conjunto tabular transversal, con pandas y matplotlib/seaborn.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> y <a href="m6.html">M6</a> (etapa exploratoria obligatoria), <a href="proyecto.html">proyecto integrador</a>.</p></div></details>
+<details class="unit" id="u2"><summary><span class="u">Unidad 2</span><b>Probabilidad y modelos aleatorios</b><span class="h">5 h</span></summary>
+<div class="ubody"><ul><li>Probabilidad, condicional e independencia; teorema de Bayes con ejemplos de diagnóstico y clasificación.</li><li>Variables aleatorias discretas y continuas; esperanza, varianza, momentos.</li><li>Distribuciones de uso frecuente: Bernoulli, binomial, Poisson, normal, exponencial, uniforme, t, chi-cuadrado; a qué fenómeno corresponde cada una.</li><li>Distribuciones conjuntas, marginales y condicionales; normal multivariada y matriz de covarianza.</li><li>Ley de los grandes números y teorema central del límite, ilustrados por simulación.</li><li>Simulación: generación de muestras, semillas, método de Monte Carlo.</li></ul><div class="practice"><small>Práctica</small>Notebook 2: simulación de los teoremas límite y ajuste de distribuciones a datos reales con SciPy.stats.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> (Naive Bayes, verosimilitud), <a href="m6.html">M6</a> (mezclas gaussianas), <a href="m7.html">M7</a> (funciones de pérdida), <a href="m8.html">M8</a> (ruido y residuos).</p></div></details>
+<details class="unit" id="u3"><summary><span class="u">Unidad 3</span><b>Estimación e incertidumbre</b><span class="h">5 h</span></summary>
+<div class="ubody"><ul><li>Población y muestra; estimador, sesgo, varianza y error cuadrático medio.</li><li>Estimación puntual: método de momentos y máxima verosimilitud; la verosimilitud como función objetivo (enlaza con M4 y M7).</li><li>Distribución del estimador y error estándar; intervalos de confianza y su interpretación correcta.</li><li>Bootstrap y remuestreo: intervalos sin fórmula cerrada; su uso cuando el supuesto teórico no se cumple.</li><li>Inferencia bayesiana: previa, verosimilitud, posterior; conjugación y estimación por simulación (MCMC como panorama).</li><li>Comparación de los enfoques clásico y bayesiano en un mismo problema aplicado.</li></ul><div class="practice"><small>Práctica</small>Notebook 3: estimación de un mismo parámetro por máxima verosimilitud, bootstrap e inferencia bayesiana, con comparación de los intervalos obtenidos.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> (incertidumbre de las métricas), <a href="m8.html">M8</a> (intervalos de predicción), <a href="proyecto.html">proyecto integrador</a>.</p></div></details>
+<details class="unit" id="u4"><summary><span class="u">Unidad 4</span><b>Contraste de hipótesis con criterio</b><span class="h">4 h</span></summary>
+<div class="ubody"><ul><li>Formulación de hipótesis, error de tipo I y II, potencia, nivel de significación.</li><li>Valor p: qué es y qué no es; tamaño del efecto y significación práctica.</li><li>Pruebas de uso frecuente: comparación de medias y de proporciones, chi-cuadrado de independencia, ANOVA de un factor, alternativas no paramétricas.</li><li>Comparaciones múltiples y su corrección; p-hacking y el problema de la reproducibilidad.</li><li>Pruebas por permutación y por remuestreo como alternativa general.</li><li>Uso central en la Diplomatura: contrastar si la diferencia de desempeño entre dos modelos es real.</li></ul><div class="practice"><small>Práctica</small>Notebook 4: pruebas por permutación aplicadas a la comparación de dos modelos y a un experimento A/B con datos reales.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> (comparación de modelos), <a href="m6.html">M6</a> (validación de agrupamientos), <a href="m8.html">M8</a> (pruebas de estacionariedad y de autocorrelación).</p></div></details>
+<details class="unit" id="u5"><summary><span class="u">Unidad 5</span><b>Regresión y modelos estadísticos</b><span class="h">7 h</span></summary>
+<div class="ubody"><ul><li>Regresión lineal simple y múltiple: estimación, interpretación de coeficientes, bondad de ajuste.</li><li>Supuestos y diagnóstico: linealidad, homocedasticidad, normalidad de residuos, independencia, observaciones influyentes.</li><li>Variables categóricas, interacciones y transformaciones; multicolinealidad y VIF.</li><li>Regresión logística desde la perspectiva estadística: verosimilitud e interpretación en odds.</li><li>Modelos paramétricos, semiparamétricos y no paramétricos: regresión polinómica, splines, regresión local; flexibilidad frente a interpretabilidad.</li><li>Selección de modelos: AIC, BIC, validación; primera aparición del sobreajuste, que se retoma en M5.</li><li>Autocorrelación de los residuos: la puerta de entrada a M8.</li></ul><div class="practice"><small>Práctica</small>Notebook 5: modelo de regresión completo con statsmodels sobre datos reales, con diagnóstico e informe interpretativo de los coeficientes.</div><p class="dest"><small>Dónde se usa</small><a href="m5.html">M5</a> (modelos lineales y logísticos), <a href="m8.html">M8</a> (modelos ARIMA y residuos), <a href="proyecto.html">proyecto integrador</a>.</p></div></details>
+  </div>
+</div></section>
+<section class="s tight"><div class="wrap cols3">
+  <div><h3>Evaluación</h3><p>Trabajo práctico: informe estadístico sobre un conjunto real asignado, con análisis exploratorio, estimación con cuantificación de la incertidumbre, un contraste de hipótesis pertinente y un modelo de regresión con diagnóstico e interpretación. Se evalúa la interpretación y la honestidad del análisis por sobre el cálculo.</p></div>
+  <div><h3>Datos de trabajo</h3><p>Conjunto tabular transversal, datos de un experimento o encuesta con estructura de grupos, y un conjunto de datos abiertos de origen sanitario o socioeconómico.</p></div>
+  <div><h3>Bibliografía</h3><ul><li>Downey, A. (2014). Think Stats, 2ª ed. (acceso libre).</li><li>Downey, A. (2021). Think Bayes, 2ª ed. (acceso libre).</li><li>Wasserman, L. (2004). All of Statistics (referencia).</li><li>James, G. et al. (2021). An Introduction to Statistical Learning, caps. 2 y 3.</li><li>Documentación de SciPy.stats y statsmodels.</li></ul></div>
+</div></section>
+<section class="s tight"><div class="wrap pager"><a class="pv" href="m1.html"><small>← Anterior</small><b>M1 · Fundamentos Matemáticos I</b></a><a class="nx" href="m3.html"><small>Siguiente →</small><b>M3 · Herramientas Informáticas</b></a></div></section>
+</main>
+<footer><div class="wrap">
+  <span class="brand"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"></span>
+  <div><b>Diplomatura Universitaria Superior en Ciencia de Datos</b>Departamento de Matemática · Facultad de Ciencias Exactas<br>Universidad Nacional del Centro de la Provincia de Buenos Aires · Tandil</div>
+  <div><b>Contacto</b><span class="ph">[correo de contacto]</span><br>Preinscripción: preingreso.exa.unicen.edu.ar<br>Folleto en PDF: <span class="ph">[enlace]</span></div>
+</div></footer>
+</body></html>
