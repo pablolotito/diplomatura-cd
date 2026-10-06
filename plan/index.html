@@ -13,15 +13,29 @@
 <nav class="top" aria-label="Secciones">
   <div class="wrap">
     <a class="brand" href="../index.html"><img src="../assets/uncpba.png" alt="UNCPBA"><img src="../assets/exactas.png" alt="Facultad de Ciencias Exactas"><span>Ciencia de Datos<br>Cohorte 2027</span></a>
-    <ul>
+    <ul class="nav-links">
       <li><a href="../index.html">Inicio</a></li>
-      <li><a href="index.html">Plan de estudios</a></li>
-      <li><a href="proyecto.html">Proyecto integrador</a></li>
+      <li><a href="index.html" aria-current="page">Plan de estudios</a></li>
       <li><a href="../index.html#cursada">Cursada</a></li>
+      <li><a href="../index.html#docentes">Docentes</a></li>
       <li><a href="../index.html#aranceles">Aranceles</a></li>
       <li><a href="../index.html#preguntas">Preguntas</a></li>
     </ul>
-    <a class="btn pri sm" href="../index.html#interes">Dejá tus datos</a>
+    <a class="btn pri sm nav-cta" href="../index.html#interes">Dejá tus datos</a>
+    <details class="mnav">
+      <summary aria-label="Menú"><span class="bars"></span></summary>
+      <div class="mnav-panel"><div class="wrap">
+        <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="index.html" aria-current="page">Plan de estudios</a></li>
+      <li><a href="../index.html#cursada">Cursada</a></li>
+      <li><a href="../index.html#docentes">Docentes</a></li>
+      <li><a href="../index.html#aranceles">Aranceles</a></li>
+      <li><a href="../index.html#preguntas">Preguntas</a></li>
+        </ul>
+        <a class="btn pri" href="../index.html#interes">Dejá tus datos</a>
+      </div></div>
+    </details>
   </div>
 </nav>
 <header class="phero"><div class="wrap">
@@ -68,4 +82,10 @@
   <div><b>Diplomatura Universitaria Superior en Ciencia de Datos</b>Departamento de Matemática · Facultad de Ciencias Exactas<br>Universidad Nacional del Centro de la Provincia de Buenos Aires · Tandil</div>
   <div><b>Contacto</b><span class="ph">[correo de contacto]</span><br>Preinscripción: preingreso.exa.unicen.edu.ar<br>Folleto en PDF: <span class="ph">[enlace]</span></div>
 </div></footer>
+<script>
+(function(){var d=document.querySelector('.mnav');if(!d)return;
+d.addEventListener('click',function(e){if(e.target.closest('a'))d.open=false;});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus();}});
+document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false;});})();
+</script>
 </body></html>
