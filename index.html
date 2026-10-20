@@ -282,7 +282,7 @@ footer .brand img{height:54px}
   <div><b>205 horas</b><span>Un año · 8 módulos</span></div>
   <div><b>A distancia</b><span>Sin presencialidad</span></div>
   <div><b>Abril 2027</b><span>Inicio de cursada</span></div>
-  <div><b>30 vacantes</b><span>Cupo de la cohorte</span></div>
+  <div><b>Cupos limitados</b><span>Cohorte 2027</span></div>
 </div></div>
 
 <main>
@@ -438,7 +438,8 @@ footer .brand img{height:54px}
         <select id="f-canal"><option value="">Elegí una opción</option><option>Correo de mi Facultad o colegio profesional</option><option>LinkedIn</option><option>Instagram o Facebook</option><option>Un docente o colega</option><option>Charla abierta</option><option>Prensa</option><option>Buscador o portal de posgrados</option><option>Otro</option></select></label>
       <label class="full">Consulta (opcional)<textarea id="f-consulta"></textarea></label>
       <button class="btn pri" type="submit">Enviar</button>
-      <div class="ok" id="ok" hidden>Prototipo: el formulario todavía no envía datos. En el sitio real, cada respuesta se agrega a la hoja «Registro de consultas» del mapa de contactos.</div>
+      <input type="text" name="web" id="f-web" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="ok" id="ok" role="status" aria-live="polite" hidden></div>
     </form>
   </div>
 </div></section>
@@ -467,7 +468,26 @@ footer .brand img{height:54px}
     });
   });
   var form=document.getElementById('form');
-  form.addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').hidden=false;});
+  // URL de la web app de Google Apps Script (termina en /exec). Vacía = modo prototipo.
+  var ENDPOINT='https://script.google.com/macros/s/AKfycbwtaBSlYuryYBSaBssqk3J0eQ9pR-rYbCZAsEg4hFTWHM7MQoX7SOEhTEzpETSt3BP_/exec';
+  var ok=document.getElementById('ok'), btn=form.querySelector('button[type=submit]');
+  function msg(t,err){ok.textContent=t;ok.hidden=false;ok.style.borderColor=err?'#c0392b':'';}
+  function val(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var nombre=val('f-nombre'), correo=val('f-correo');
+    if(!nombre||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)){msg('Completá tu nombre y un correo electrónico válido.',true);return;}
+    var r=form.querySelector('input[name=datos]:checked');
+    var datos=r?r.parentNode.textContent.trim():'';
+    var body=new URLSearchParams({nombre:nombre,correo:correo,titulo:val('f-titulo'),ciudad:val('f-ciudad'),
+      ocupacion:val('f-ocupacion'),datos:datos,canal:val('f-canal'),consulta:val('f-consulta'),web:val('f-web')});
+    if(!ENDPOINT){msg('Prototipo: el formulario todavía no está conectado a la planilla.');return;}
+    btn.disabled=true;msg('Enviando…');
+    fetch(ENDPOINT,{method:'POST',mode:'no-cors',body:body})
+      .then(function(){form.reset();msg('¡Gracias, '+nombre.split(' ')[0]+'! Recibimos tus datos y te vamos a escribir a '+correo+'.');})
+      .catch(function(){msg('No pudimos enviar el formulario. Probá de nuevo o escribinos a diplomatura-cd@exa.unicen.edu.ar.',true);})
+      .then(function(){btn.disabled=false;});
+  });
 })();
 </script>
 
